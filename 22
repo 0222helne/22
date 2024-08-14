@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>숫자 게임</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            display: inline-block;
+            width: 60px;
+            height: 80px;
+            margin: 10px;
+            line-height: 80px;
+            font-size: 24px;
+            border: 2px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .black { background-color: black; color: white; }
+        .white { background-color: white; color: black; }
+        #submit {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>숫자 게임</h1>
+        <div id="cards">
+            <!-- Cards will be generated here -->
+        </div>
+        <button id="submit">제출</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        let cards = [
+            { number: 1, color: 'white' }, { number: 2, color: 'black' },
+            { number: 3, color: 'white' }, { number: 4, color: 'black' },
+            { number: 5, color: 'white' }, { number: 6, color: 'black' },
+            { number: 7, color: 'white' }, { number: 8, color: 'black' },
+            { number: 9, color: 'white' }
+        ];
+        
+        let selectedCard = null;
+
+        function renderCards() {
+            const cardContainer = document.getElementById('cards');
+            cardContainer.innerHTML = '';
+            cards.forEach(card => {
+                const cardElement = document.createElement('div');
+                cardElement.className = `card ${card.color}`;
+                cardElement.textContent = card.number;                cardElement.textContent = card.number;
+                cardElement.onclick = () => selectCard(card);                cardElement.on클릭 =() => Card(카드) 선택;
+                cardContainer.appendChild(cardElement);                card container.append Child(card Element);
+            });            });
+        }        }
+
+        function selectCard(card) {        기능 선택 카드(카드) {
+            selectedCard = card;            선택한 카드 = 카드;
+            document.getElementById('result').            document.getElementById('result').textContent = `선택된 카드: ${card.number}`;텍스트 내용 = '선택된 카드: ${card.number}';
+        }        }
+
+        document.getElementById('submit').onclick = () => {        document.getElementById('submit')를 클릭합니다. =() => {
+            if (!selectedCard) {            if (!selected Card) {
+                alert('카드를 선택하세요.');                alert('카드를 선택하세요.');
+                return;                반환;
+
+
+     }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }                 }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            
+
+     }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }                 }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }}            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }}            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }}            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }}            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }            }}            }            }            }            }            }}            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }}            }            }            }}            }            }            }            }            }}            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }}            }            }}            }            }            }            }            }}            }}            }            }            }            }            }}            }            }            }            }            }            }}            }            }            }            }            }
+            // 서버 통신 대신 간단한 승패 로직 추가            // 서버 통신 대신 간단한 승패 로직 추가
+            const opponentCard = Math.floor(Math.random() * 9) + 1;            구성 상대 카드 = Math.floor(Math.random() * 9) + 1;
+            let result = '';            결과 = ';
+
+            if (selectedCard.number > opponentCard) {            if(선택한 Card.number > 상대 카드) {
+                result = '승리';                결과 = '승리';
+            } else if (selectedCard.number < opponentCard) {            } 그렇지 않은 경우(선택한 Card.number < activateCard) {
+                result = '패배';                결과 = '패배';
+            } else {            } 그 외 {
+                result = '무승부';                결과 = '무승부';
+            }            }
+
+            document.getElementById('result').            document.getElementById('result').textContent = `상대방 카드: ${opponentCard}, 결과: ${result}`;본문 내용 = '상대방 카드: ${상대카드}, 결과: ${result};
+            cards = cards.            카드 = 카드filter(card => card.number !== selectedCard.number);필터(card => card.number!== selectedCard.number);
+            renderCards(); // Re-render cards to reflect the used card            renderCard(); // 사용된 카드를 반영하도록 카드를 다시 렌더링합니다.
+            selectedCard = null;            선택한 카드 = null;
+        };        };
+
+        renderCards();        렌더 카드();
+    </script>    </스크립트>
+</body></신체>
+</html></html>
